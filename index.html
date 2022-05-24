@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="left-side">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </section>
+
+      <section class="right-side">
+        <div class="blue-square">
+          <p>
+            <span class="bolder">Try it free 7 days</span> then $20/mo.
+            thereafter
+          </p>
+        </div>
+        <article class="white-box">
+          <form action="#">
+            <input
+              class="form-fill first_name"
+              type="text"
+              name="first_name"
+              placeholder="First Name"
+            />
+
+            <input
+              class="form-fill last_name"
+              type="text"
+              name="last_name"
+              placeholder="Last Name"
+            />
+            <input
+              class="form-fill e_mail"
+              type="email"
+              name="e-mail"
+              class="e_mail"
+              placeholder="Email Adress"
+            />
+            <input
+              class="form-fill password"
+              type="password"
+              name="password"
+              placeholder="Password"
+            />
+            <input
+              class="submit form-fill green-box"
+              type="submit"
+              value="Claim your free trial"
+            />
+            <h2>
+              By clicking the button, you are agreeing to our
+              <span class="red-bold"> Terms and Services </span>
+            </h2>
+          </form>
+          <div class="error">
+            <img
+              class="firstName_error hide"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <label class="first_name_errmessage hide" for="first_name"
+              >first name cannot be empty</label
+            >
+            <img
+              class="lastName_error hide"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <label class="last_name_errmessage hide" for="last_name"
+              >last name cannot be empty</label
+            >
+            <img
+              class="email_error hide"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <label class="email_errmessage hide" for="e-mail"
+              >email not valid</label
+            >
+            <img
+              class="password_error hide"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <label class="password_errmessage hide" for="password"
+              >password cannot be empty</label
+            >
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
